@@ -1,6 +1,6 @@
 node {
     stage('git clone') {
-        git branch: 'main', credentialsId: 'UdayBheemaneni', url: 'https://github.com/UdayBheemaneni/ThirdEye.git'
+        git branch: 'main', credentialsId: 'UdayBheemaneni', url: 'https://github.com/UdayBheemaneni/Cuckoo.git'
     }
     stage('maven build') {
         sh 'mvn clean package'
