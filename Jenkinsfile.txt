@@ -1,0 +1,8 @@
+node {
+    stage('git clone') {
+       git branch: 'main', credentialsId: 'UdayBheemaneni', url: 'https://github.com/UdayBheemaneni/Cuckoo.git' 
+    }
+    stage('maven Build') {
+        sh 'mvn clean package'
+    }
+}
